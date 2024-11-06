@@ -37,9 +37,8 @@ const operatorClick = (event) => {
 
 // Equals click - how do we display a calculated value?
 
-const equalsClick = (event) => {
-  display.innerText = output
 
+const equalsClick = (event) => {
   if (operator === '+') {
     output = numOne + numTwo
   } else if (operator === '-') {
@@ -53,6 +52,7 @@ const equalsClick = (event) => {
       output = numOne / numTwo
     }
   }
+  display.innerText = output
 }
 
 // Clear click - how do we clear the calculator?
